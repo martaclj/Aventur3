@@ -1,0 +1,40 @@
+#contacto {
+  justify-content: center;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: auto;
+
+}
+#formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+#formulario label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+#formulario input, #formulario textarea {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+#formulario input[type="submit"] {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#formulario input[type="submit"]:hover {
+  background-color: #555;
+}
+#proximos {
+  list-style-type: none;
+  margin: 20px 0;
+  max-width: 400px;
+  text-align: center;
+}

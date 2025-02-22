@@ -6,7 +6,6 @@
     <title>Agencia de Viajes Aventure3</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/viajesstyle.css">
-
   </head>
   <body>
     <?php include 'menu.php'; ?>
@@ -24,13 +23,13 @@
         <p>Desde 1.200€</p>
         <p>Días: 10</p>
       </div>
-      <div id="viaje">
+      <div class="viaje">
         <img src="https://cdn.pixabay.com/photo/2020/05/14/09/28/jakarta-5170600_1280.jpg" alt="Indonesia">
         <h3>Indonesia</h3>
         <p>Desde 1.500€</p>
         <p>Días: 12</p>
       </div>
-      <div id="viaje">
+      <div class="viaje">
         <img src="https://cdn.pixabay.com/photo/2014/05/26/09/58/sydney-opera-house-354375_1280.jpg" alt="Australia">
         <h3>Australia</h3>
         <p>Desde 2.000€</p>
@@ -38,7 +37,7 @@
       </div>
     </div>
     <h3>Próximamente disponibles...</h3>
-    <ul>
+    <ul id="proximos">
       <li>China</li>
       <li>Perú</li>
       <li>Kenia</li>

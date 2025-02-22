@@ -1,0 +1,40 @@
+#viajes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#proximos {
+  list-style-type: none;
+  margin: auto;
+}
+.viaje {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+}
+.viaje img {
+  width: 100%;
+  border-radius: 5px;
+}
+.viaje h3 {
+  margin: 10px 0;
+}
+.viaje p {
+  margin: 5px 0;
+}
+.viaje a {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  display: block;
+  margin: 10px 0;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+.viaje a:hover {
+  background-color: #f0f0f0;
+}
