@@ -1,19 +1,118 @@
-body {
-  font-family: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Open+Sans:wght@600&display=swap');
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
   background-color: #f5f5f5;
+  color: #333;
   text-align: center;
 }
+
 header {
+  padding: 10px 20px;
+  font-size: 1.5em;
+  text-transform: uppercase;
   background-color: #333;
-  color: white;
-  padding: 10px;
-  font-size: 26px;
+  color: #fff;
 }
+
 nav {
   display: flex;
-  justify-content: center;
-  background-color: #333;
+  background-color: #444;
   padding: 10px;
+  justify-content: center;
+}
+
+nav a {
+  margin: 0 15px;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #567236;
+}
+
+.hero {
+  background-image: url('https://cdn.pixabay.com/photo/2020/10/05/07/29/woman-5628426_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.section {
+  background-color: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style: none;
+  margin: 20px 0;
+  max-width: 400px;
+  text-align: center;
+}
+
+ul li {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+ul li:hover {
+  background-color: #567236;
+  color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+
+  .hero {
+    height: 200px;
+    font-size: 1.5rem;
+  }
+
+  .section {
+    padding: 10px;
+    margin: 10px;
+    max-width: 95%;
+  }
 }
