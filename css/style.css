@@ -14,45 +14,59 @@ body {
 }
 
 header {
-  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
   font-size: 1.5em;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  color: rgb(88, 33, 88);
+}
+
+.tagline {
+  color: #555;
+  font-size: 0.9em;
+  margin-left: 10px;
   text-transform: uppercase;
-  background-color: #333;
-  color: #fff;
 }
 
 nav {
   display: flex;
-  background-color: #444;
-  padding: 10px;
-  justify-content: center;
+  background-color: transparent;
+  gap: 20px;
 }
 
 nav a {
-  margin: 0 15px;
   padding: 5px 10px;
   text-decoration: none;
   border-radius: 5px;
-  color: #fff;
-  font-weight: bold;
+  color: #333;
+  font-weight: 600;
   transition: background-color 0.3s;
 }
 
 nav a:hover {
-  background-color: #567236;
+  background-color: #f0f0f0;
 }
 
 .hero {
   background-image: url('https://cdn.pixabay.com/photo/2020/10/05/07/29/woman-5628426_1280.jpg');
   background-size: cover;
   background-position: center;
-  height: 400px;
+  margin-top: 0;
+  height: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-size: 2rem;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .section {
@@ -90,23 +104,38 @@ ul li:hover {
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
-  margin-top: 20px;
-  padding: 10px 20px;
+  background-color: #fff;
+  color: #333;
+  margin-top: 40px;
+  padding: 20px 40px;
   position: fixed;
   bottom: 0;
   width: 100%;
   text-transform: uppercase;
+  font-weight: 600;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  text-align: right;
+
 }
 
 @media (max-width: 600px) {
-  nav {
+  header {
     flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  nav {
+    margin-top: 10px;
+    padding: 0;
   }
 
   nav a {
     margin: 5px 0;
+  }
+
+  .tagline {
+    margin-left: 0;
   }
 
   .hero {
