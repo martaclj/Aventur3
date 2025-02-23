@@ -12,11 +12,10 @@
 
     <div class="hero">Descubre países lejanos</div>
     <div id="home" class="section">
-      <h2>Descubre nuestra oferta de destinos</h2>
+    <h2>Catálogo de viajes</h2>
       <p>Las mejores opciones del mercado a precios inigualables.</p>
     </div>
     <div id="viajes" class="section">
-      <h2>Catálogo de viajes</h2>
       <div class="viaje">
         <img src="https://cdn.pixabay.com/photo/2021/10/10/20/33/mehtab-bagh-6698669_1280.jpg" alt="India">
         <h3>India</h3>
@@ -34,6 +33,12 @@
         <h3>Australia</h3>
         <p>Desde 2.000€</p>
         <p>Días: 15</p>
+      </div>
+      <div class="viaje">
+        <img src="https://cdn.pixabay.com/photo/2020/01/22/18/23/istanbul-4785964_1280.jpg" alt="Turquía">
+        <h3>Turquía</h3>
+        <p>Desde 1.800€</p>
+        <p>Días: 10</p>
       </div>
     </div>
     <h3>Próximamente disponibles...</h3>
